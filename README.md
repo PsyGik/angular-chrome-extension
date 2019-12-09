@@ -17,3 +17,4 @@ A Dead simple bookmark manager to collect and tag bookmarks.
 * Create tags/bookmark folder instantly from the popup/toolbar menu
 * Context option to save current page to bookmark/tag
 * Default set of Bookmarks and Tags (optional) <= Can be created from settings, this will replace all your existing bookmarks (moved to Old Bookmarks)
+* Enable RSS feeds for supported sites (optional, enabled through settings)
