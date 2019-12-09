@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PopupComponent } from './popup/popup.component';
+import { ManagerComponent } from './manager/manager.component';
+import {BookmarkService} from './service/bookmark.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PopupComponent,
+    ManagerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BookmarkService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
