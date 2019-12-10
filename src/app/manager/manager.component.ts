@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {BookmarkService} from '../service/bookmark.service';
+import {WindowService} from '../service/window.service';
 
 @Component({
   selector: 'app-manager',
@@ -8,12 +9,21 @@ import {BookmarkService} from '../service/bookmark.service';
 })
 export class ManagerComponent implements OnInit {
 
-
-  constructor(private bookmarkService: BookmarkService) { }
+  data = [
+    {name: 'Blah', address: 'www'},
+    {name: 'Blah', address: 'www'},
+    {name: 'Blah', address: 'www'},
+    {name: 'Blah', address: 'www'},
+    {name: 'Blah', address: 'www'},
+    {name: 'Blah', address: 'www'},
+  ];
+  constructor(private bookmarkService: BookmarkService, private windowService: WindowService) { }
 
   ngOnInit() {
     this.bookmarkService.getBookmarks().subscribe(bookmarks => {
       console.log('Bookmarks are', bookmarks);
     });
+
+    this.windowService.getAllWindows();
   }
 }

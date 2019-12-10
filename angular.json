@@ -30,7 +30,9 @@
               { "glob": "background.js", "input": "./", "output": "./" }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.css"
             ],
             "scripts": []
           },

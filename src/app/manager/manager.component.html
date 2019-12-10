@@ -1,1 +1,24 @@
-<p>manager works!</p>
+<div class="container">
+  <div class="sidebar">
+
+  </div>
+  <div class="toolbar">
+
+  </div>
+  <div class="content">
+    <p-panel >
+      <p-header>
+        Header content here
+      </p-header>
+      <p-table [value]="data">
+        <ng-template pTemplate="body" let-car>
+          <tr>
+            <td>{{car.name}}</td>
+            <td>{{car.address}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-panel>
+
+  </div>
+</div>
